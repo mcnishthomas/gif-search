@@ -17,7 +17,7 @@ export default class App extends Component {
     this.performSearch();
   }
 
-  performSearch = (query = 'cats') => {
+  performSearch = (query = 'meme') => {
     axios.get(`http://api.giphy.com/v1/gifs/search?q=${query}&limit=24&api_key=F6dbdsD9RXRBIUX9HzVTt7sjbcUYTE3l`)
       .then(response => {
         this.setState({
